@@ -1,0 +1,15 @@
+#!/bin/bash
+sh grepSchedule.sh 0310 05:00 AM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0310 08:00 AM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0310 02:00 PM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0310 08:00 PM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0310 11:00 PM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0312 05:00 AM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0312 08:00 AM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0312 02:00 PM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0312 08:00 PM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0312 11:00 PM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0315 05:00 AM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0315 08:00 AM Mylie Schmidt | awk -F" " '{print $5,$6}'
+sh grepSchedule.sh 0315 02:00 PM Mylie Schmidt | awk -F" " '{print $5,$6}'
+
