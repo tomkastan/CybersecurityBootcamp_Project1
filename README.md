@@ -5,9 +5,9 @@ First project for Cybersecurity Bootcamp - Tom Kastan
 
 The files in this repository were used to configure the network depicted below.
 
-Diagrams/ElkStackDeployment.png
+![alt text](Diagrams/ElkStackDeployment.png "ELK Stack Deployment")
 
-These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the _____ file may be used to install only certain pieces of it, such as Filebeat.
+These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the ElkPlayBook.yml file may be used to install only certain pieces of it, such as Filebeat.
 
 The ELK deployment in this network was performed with the Ansible/ElkPlaybook.yml file, executing from Jump Box Provisioner in the RedTeams Network.
 
@@ -54,7 +54,6 @@ Only the Jump-Box-Provisioner machine (40.87.71.111) can accept connections from
 
 Machines within the network can only be accessed by using Jump-Box-Provisioner with a public IP address of 40.87.71.111.
 The Intenet can access the DVWA VMs via the RedTeamLB load balancer, with a public IP address of 52.255.159.99.
-- _TODO: Which machine did you allow to access your ELK VM? What was its IP address?_
 
 A summary of the access policies in place can be found in the table below.
 
@@ -88,7 +87,7 @@ The playbook implements the following tasks:
 - Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-Images/psShowingElkOnElkbox.png
+![alt text](Images/psShowingElkOnElkbox.png "ps showing ELK on Elkbox")
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -99,8 +98,7 @@ Web-3: 10.0.0.7
 We have installed the following Beats on these machines:
 Filebeat
 
-These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+Filebeat allows us to collect log files from each machine, and forward them to Elkbox.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -135,26 +133,26 @@ Answer the following Questions:
 
 - In the last 7 days, how many unique visitors were located in India?
 There were 231 unique vistors from India in the last seven days.
-Images/IndiaWebVisitors.png
+![alt text](Images/IndiaWebVisitors.png "Unique visitors from India in the last seven days.")
 
 
 - In the last 24 hours, of the visitors from China, how many were using Mac OSX?
 In the last 24 hours, eleven unique visitors from China were using Mac OSX.
-Images/China24hOsx.png
+![alt text](Images/China24hOsx.png "Unique users of Mac OSX from China in the last twenty-four hours.")
 
 
 - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
 I was able to generate the table, but could not determine how to provide percentages for the error codes with the time I had.
-Images/ResponseCode2Days.png
+![alt text](Images/ResponseCode2Days.png "Repsponse codes for the last two days.")
 
 - In the last 7 days, what country produced the majority of the traffic on the website?
 In the last seven days, the majority of traffic was produced by China.
-Images/TrafficLast7Days.png
+![alt text](Images/TrafficLast7Days.png "Web traffic for last seven days showing majority is produced from China.")
 
 - Of the traffic that's coming from that country, what time of day had the highest amount of activity?
 The highest traffic from China was at hour 12.
-Images/TrafficHeatmapByCountry.png
-Images/TrafficHeatmapMaxVisits.png
+![alt text](Images/TrafficHeatmapByCountry.png "Heatmap by country.")
+![alt text](Images/TrafficHeatmapMaxVisits.png "Heatmap by country with drill down.")
 
 
 - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type
@@ -163,23 +161,23 @@ deb = standard Unix archive format containing two zipped files, one for the inst
 zip = an archive file format that supports lossless compression.
 css = Cascading Style Sheets is a style sheet for presentation of a document written in a markup language.
 gz = gnu zipped file format.
-Images/FileTypes7Days.png
+![alt text](Images/FileTypes7Days.png "File types for the last seven days.")
 
 
 = Unique Visitors vs Average Bytes
 - Locate the time frame within the last 7 days with teh most amount of bytes
 28 March 2021 21:00 to 29 March 2021 00:00 had the most bytes with three visitors
-Images/EventAvgBytes.png
+![alt text](Images/EventAvgBytes.png "Unique Visitors vs Average Bytes.")
 
 - In your own words, is there anything that seems potentially strange about this activity?
 three users had the highest number of average bytes.
-Images/EventZoom.png
+![alt text](Images/EventZoom.png "Focus on 28 March 2021 21:00")
 
 - What is the timestamp of the event
 The largest download occured at 22:00 on 28 March 2021.  It was the download of a 15.3 kilobyte rpm file.
-Images/EventZoomFirst.png
+![alt text](Images/EventZoomFirst.png "Focus on first event.")
 
 I was able to trace the visitor to India.
-Images/EventSourcIndia.png
+![alt text](Images/EventSourcIndia.png "India!")
 
 DISCOVERY did not yield any additional information for this event.
