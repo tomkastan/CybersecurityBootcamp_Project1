@@ -174,6 +174,6 @@ The largest download occured at 22:00 on 28 March 2021.  It was the download of 
 ![alt text](images/EventZoomFirst.PNG "Focus on first event.")
 
 I was able to trace the visitor to India.
-![alt text](images/EventSourcIndia.PNG "India!")
+![alt text](images/EventSourceIndia.PNG "India!")
 
 DISCOVERY did not yield any additional information for this event.
