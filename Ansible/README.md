@@ -83,7 +83,7 @@ The playbook implements the following tasks:
 - Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-![alt text](images/psShowingElkOnElkbox.png "ps showing ELK on Elkbox")
+images/psShowingElkOnElkbox.png
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -160,7 +160,7 @@ gz = gnu zipped file format.
 ![alt text](images/FileTypes7Days.png "File types for the last seven days.")
 
 
-= Unique Visitors vs Average Bytes
+#### Unique Visitors vs Average Bytes
 - Locate the time frame within the last 7 days with teh most amount of bytes
 28 March 2021 21:00 to 29 March 2021 00:00 had the most bytes with three visitors
 ![alt text](images/EventAvgBytes.png "Unique Visitors vs Average Bytes.")
