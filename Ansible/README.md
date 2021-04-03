@@ -83,7 +83,7 @@ The playbook implements the following tasks:
 - Enable docker service
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
-images/psShowingElkOnElkbox.png
+![alt text](images/psShowingElkOnElkbox.PNG)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
@@ -134,21 +134,21 @@ There were 231 unique vistors from India in the last seven days.
 
 - In the last 24 hours, of the visitors from China, how many were using Mac OSX?
 In the last 24 hours, eleven unique visitors from China were using Mac OSX.
-![alt text](images/China24hOsx.png "Unique users of Mac OSX from China in the last twenty-four hours.")
+![alt text](images/China24hOsx.PNG "Unique users of Mac OSX from China in the last twenty-four hours.")
 
 
 - In the last 2 days, what percentage of visitors received 404 errors? How about 503 errors?
 I was able to generate the table, but could not determine how to provide percentages for the error codes with the time I had.
-![alt text](images/ResponseCode2Days.png "Repsponse codes for the last two days.")
+![alt text](images/ResponseCode2Days.PNG "Repsponse codes for the last two days.")
 
 - In the last 7 days, what country produced the majority of the traffic on the website?
 In the last seven days, the majority of traffic was produced by China.
-![alt text](images/TrafficLast7Days.png "Web traffic for last seven days showing majority is produced from China.")
+![alt text](images/TrafficLast7Days.PNG "Web traffic for last seven days showing majority is produced from China.")
 
 - Of the traffic that's coming from that country, what time of day had the highest amount of activity?
 The highest traffic from China was at hour 12.
-![alt text](images/TrafficHeatmapByCountry.png "Heatmap by country.")
-![alt text](images/TrafficHeatmapMaxVisits.png "Heatmap by country with drill down.")
+![alt text](images/TrafficHeatmapByCountry.PNG "Heatmap by country.")
+![alt text](images/TrafficHeatmapMaxVisits.PNG "Heatmap by country with drill down.")
 
 
 - List all the types of downloaded files that have been identified for the last 7 days, along with a short description of each file type
@@ -157,23 +157,23 @@ deb = standard Unix archive format containing two zipped files, one for the inst
 zip = an archive file format that supports lossless compression.
 css = Cascading Style Sheets is a style sheet for presentation of a document written in a markup language.
 gz = gnu zipped file format.
-![alt text](images/FileTypes7Days.png "File types for the last seven days.")
+![alt text](images/FileTypes7Days.PNG "File types for the last seven days.")
 
 
 #### Unique Visitors vs Average Bytes
 - Locate the time frame within the last 7 days with teh most amount of bytes
 28 March 2021 21:00 to 29 March 2021 00:00 had the most bytes with three visitors
-![alt text](images/EventAvgBytes.png "Unique Visitors vs Average Bytes.")
+![alt text](images/EventAvgBytes.PNG "Unique Visitors vs Average Bytes.")
 
 - In your own words, is there anything that seems potentially strange about this activity?
 three users had the highest number of average bytes.
-![alt text](images/EventZoom.png "Focus on 28 March 2021 21:00")
+![alt text](images/EventZoom.PNG "Focus on 28 March 2021 21:00")
 
 - What is the timestamp of the event
 The largest download occured at 22:00 on 28 March 2021.  It was the download of a 15.3 kilobyte rpm file.
-![alt text](images/EventZoomFirst.png "Focus on first event.")
+![alt text](images/EventZoomFirst.PNG "Focus on first event.")
 
 I was able to trace the visitor to India.
-![alt text](images/EventSourcIndia.png "India!")
+![alt text](images/EventSourcIndia.PNG "India!")
 
 DISCOVERY did not yield any additional information for this event.
